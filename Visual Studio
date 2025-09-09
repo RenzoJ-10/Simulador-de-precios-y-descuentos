@@ -1,0 +1,45 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Simulador_de_precios_y_descuentos
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            // Entradas
+            Console.Write("Ingrese el precio del producto: ");
+            double precio = double.Parse(Console.ReadLine());
+
+            Console.Write("Ingrese la cantidad de unidades: ");
+            int cantidad = int.Parse(Console.ReadLine());
+
+            // Proceso: calcular subtotal
+            double subtotal = precio * cantidad;
+            double descuento = 0;
+
+            // Condición para aplicar descuento
+            if (subtotal > 100)
+            {
+                descuento = subtotal * 0.15;
+            }
+            else
+            {
+                descuento = 0;
+            }
+
+            // Calcular precio final
+            double precioFinal = subtotal - descuento;
+
+            // Salidas
+            Console.WriteLine($"\nSubtotal: ${subtotal:F2}");
+            Console.WriteLine($"Descuento: ${descuento:F2}");
+            Console.WriteLine($"Precio final: ${precioFinal:F2}");
+
+            Console.ReadKey();
+        }
+    }
+}

@@ -1,0 +1,12 @@
+1.- Inicio
+2.- Leer precio del producto
+3.- Leer cantidad de unidades
+4.- Calcular subtotal = precio * cantidad
+5.- Verificar: ¿subtotal > 100?
+6.- SI SÍ → Calcular descuento = subtotal * 0.15
+7.- SI NO → Descuento = 0
+8.- Calcular precio final = subtotal - descuento
+9.- Mostrar subtotal
+10.- Mostrar descuento
+11.- Mostrar precio final
+12.- Fin

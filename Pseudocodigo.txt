@@ -1,0 +1,18 @@
+Inicio
+Leer precio
+Leer cantidad
+
+subtotal = precio * cantidad
+
+Si subtotal > 100 Entonces
+      descuento = subtotal * 0.15
+  Sino
+      descuento = 0
+  FinSi
+
+precioFinal = subtotal - descuento
+
+Mostrar "Subtotal = ", subtotal
+Mostrar "Descuento = ", descuento
+Mostrar "Precio Final = ", precioFinal
+Fin
